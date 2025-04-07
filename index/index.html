@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silva's Semijoias</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Fonte Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    
+    <style>
+        :root {
+            --gold-color: #D4AF37; /* Dourado mais vibrante */
+            --gray-color: #6D6D6D; /* Cinza original restaurado */
+            --hover-gold: #E6C28B;
+            --wine-color: #800020;
+        }
+
+        .sidebar {
+            background: var(--gold-color);
+        }
+
+        .sidebar .nav-item {
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar .nav-item:hover {
+            background: var(--hover-gold);
+            transform: scale(1.05);
+        }
+
+        .main-content {
+            background: var(--gray-color);
+        }
+
+        header {
+            background: var(--gold-color);
+        }
+        .title {
+            color: var(--wine-color);
+            font-weight: bold;
+            font-family: 'Great Vibes', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar text-white vh-100 p-3 d-flex flex-column">
+            <div class="text-center mb-4">
+                <!-- <img src="images/logo.png" alt="Silva's Semijoias" class="img-fluid" style="max-width: 150px;"> -->
+                <span class="title">Silva's Semijoias</span>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item"><i class="fas fa-dollar-sign me-2"></i> Pagamentos</li>
+                <li class="nav-item"><i class="fas fa-shopping-cart me-2"></i> Vendas</li>
+                <li class="nav-item"><i class="fas fa-user me-2"></i> Clientes</li>
+                <li class="nav-item"><i class="fas fa-gem me-2"></i> Produtos</li>
+                <li class="nav-item"><i class="fas fa-truck me-2"></i> Fornecedores</li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <div class="main-content flex-grow-1 d-flex flex-column text-white">
+            <header class="p-3 text-dark d-flex align-items-center">
+                <i class="fas fa-home me-2"></i> <span>Menu</span>
+            </header>
+            <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                <img src="assets/images/logoSilvas.png" style="max-width: 300px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
